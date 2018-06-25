@@ -1,11 +1,7 @@
-const path = require("path");
-const webpack = require("webpack");
 const DEV_PORT = process.env.PORT || 3000;
 
 module.exports = {
-  entry: {
-    app: ["./src/index.js"]
-  },
+  entry: "./src/index.js",
   output: {
     path: __dirname + "/public",
     filename: "bundle.js"
@@ -22,6 +18,5 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
-  },
-  plugins: []
+  }
 };
